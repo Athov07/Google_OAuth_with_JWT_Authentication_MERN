@@ -1,6 +1,8 @@
 import User from "../models/User.js";
 import { generateTokens } from "../utils/generateTokens.js";
 
+
+// Google Callback
 export const googleCallback = async (req, res) => {
   const { accessToken, refreshToken } = generateTokens(req.user);
 
@@ -20,7 +22,7 @@ export const googleCallback = async (req, res) => {
 
 
 
-// logout
+// USer Logout
 export const logout = async (req, res) => {
   try {
 

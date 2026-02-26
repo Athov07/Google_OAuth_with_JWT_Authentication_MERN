@@ -5,9 +5,9 @@ const API = axios.create({
   withCredentials: true, // required for cookies
 });
 
-/* =========================
-   Attach Access Token
-========================= */
+
+// Attach Access Token
+
 API.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");

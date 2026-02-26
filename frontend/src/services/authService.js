@@ -1,8 +1,7 @@
 import API from "./api";
 
-/* =========================
-   LOGOUT
-========================= */
+// Logout
+
 export const logoutAPI = async () => {
   return await API.post("/auth/logout");
 };
